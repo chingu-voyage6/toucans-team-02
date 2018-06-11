@@ -37,6 +37,10 @@
 7. Build the ChatBot and implement
 8. Process booking information to generate a printable ticket (No you can't actually go to mars with this :joy:) 
 
+##### Team Members
+
+Jam[TL], Kaouter, Dozie
+
 
 
 
