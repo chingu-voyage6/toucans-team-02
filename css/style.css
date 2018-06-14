@@ -1,0 +1,30 @@
+/* RESET */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+body {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+/* STYLING */
+
+/* .section-hero-bg-image {
+  background: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+} */
