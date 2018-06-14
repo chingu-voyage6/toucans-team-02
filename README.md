@@ -8,10 +8,10 @@
 
 ### Weekly ToDo
 
-- [x] Select team lead 
+- [x] Select team lead (Jam)
 - [x] Choose project idea 
 - [x] Decide WorkFlow tools
-- [ ] Decide MVP
+- [x] Decide MVP
 
 #### Features to add/Suggestions
 
@@ -27,11 +27,11 @@
 
 #### Goals in order of importance.
 
-1. Set up our development environment and get familiar with it (Discord, Slack, Preferred IDE, Waffle, GitHub) 
+1. Set up our development environment and get familiar with it (Discord, Slack, Preferred IDE, Trello, GitHub) 
 
 2. Build HTML Structure
 3. Collect assets for site (images etc.)
-4. Create CSS Styling for site (Responsive, no framework for now)
+4. Create CSS Styling for site
 5. Implement any JS features needed
 6. Build the booking form and implement
 7. Build the ChatBot and implement
@@ -39,7 +39,7 @@
 
 ##### Team Members
 
-Jam[TL], Kaouter, Dozie
+Jam, Kaouter, Dozie
 
 
 
