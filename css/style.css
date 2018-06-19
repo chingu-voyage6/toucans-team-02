@@ -11,7 +11,7 @@
 body {
   font-size: 16px;
   letter-spacing: 0.05em;
-  color: black;
+  color: #000;
   font-family: "Raleway", sans-serif;
 }
 
@@ -27,4 +27,90 @@ body {
   bottom: 0;
   left: 0;
   opacity: 0.9;
-} */
+} 
+
+/* Utility Classes */
+.center-item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.seperator {
+  margin-bottom: 1.6em;
+  padding-bottom: 1.6em;
+  margin-top: 1.6em;
+  padding-top: 1.6em;
+}
+/* Navigation */
+.navigation ul {
+  list-style: none;
+  background-color: #222;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s background-color;
+}
+
+.navigation a.active {
+  background-color: #fff;
+  color: #444;
+}
+
+@media screen and (min-width: 600px) {
+  nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .navigation li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+/* Filler Section */
+
+.filler-bg {
+  background-color: #ddd;
+}
+.filler-button {
+  font-size: 1.2em;
+}
+
+/* Services Section */
+
+#section-services h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 1.3em;
+}
+
+/* Destination Section */
+
+.planet-bg-img {
+  background-color: #ddd;
+  height: 18em;
+  width: 18em;
+  border: 2px #222 solid;
+  border-radius: 50%;
+}
