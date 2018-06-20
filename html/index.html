@@ -21,8 +21,7 @@
     <nav class="navigation">
       <a href="#" class="menu-bar"></a>
       <!-- <i class="fa fa-bars fa-3x"></i> -->
-      </a>
-      <ul role="navigation">
+      <ul>
         <li>
           <a href="#section-hero">Home</a>
         </li>
@@ -33,10 +32,10 @@
           <a href="#section-services">Services</a>
         </li>
         <li>
-          <a href="#">Destinations</a>
+          <a href="#section-destinations">Destinations</a>
         </li>
         <li>
-          <a href="#">Reviews</a>
+          <a href="#section-reviews">Reviews</a>
         </li>
         <li>
           <a href="#">About</a>
@@ -53,20 +52,20 @@
   <!-- END NAVBAR -->
   <!-- SECTION HERO -->
   <main>
-    <section id="section-hero" class="hero u-full-width center-item seperator">
+    <section id="section-hero" class="hero u-full-width center-item">
       <div class="section-hero-bg-image"></div>
-      <div class="container">
+      <div class="container seperator">
         <div class="twelve columns">
           <h1>Looking for an adventure?</h1>
           <h3>Book with SpaceLink for your next galactic travel, you won't look back.</h3>
-          <button class="button-primary">Travel the milky way</button>
+          <button class="btn-main">Travel the galaxy</button>
         </div>
       </div>
     </section>
     <!-- END SECTION HERO -->
     <!-- SECTION WELCOME -->
-    <section id="section-welcome" class="welcome u-full-width center-item seperator">
-      <div class="container">
+    <section id="section-welcome" class="welcome u-full-width center-item">
+      <div class="container seperator">
         <div class="row">
           <div class="twelve columns">
             <h3>Welcome to SpaceLink</h3>
@@ -78,14 +77,15 @@
     </section>
     <!-- END SECTION WELCOME -->
     <!-- SECTION FILLER -->
-    <section id="section-filler" class="filler filler-bg center-item seperator">
+    <section id="section-filler" class="filler center-item">
+      <div class="filler-bg-img"></div>
       <div class="container">
-        <button class="filler-button">Explore</button>
+        <button class="btn-secondary">Explore</button>
       </div>
     </section>
     <!-- END SECTION FILLER -->
     <!-- SECTION WHAT WE OFFER -->
-    <section id="section-services" class="services u-full-width center-item seperator">
+    <section id="section-services" class="services u-full-width center-item">
       <div class="container">
         <div class="twelve columns">
           <h3>What we offer</h3>
@@ -112,7 +112,7 @@
             <p>Our ships have been fitted with state of the art tech, nanobots, autopilot, holodecks and more!</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row seperator">
           <div class="one-half column">
             <i class="fas fa-utensils fa-3x"></i>
             <h5>Food from home</h5>
@@ -128,34 +128,93 @@
     </section>
     <!-- END SECTION WHAT WE OFFER -->
     <!-- SECTION FILLER 2 -->
-    <section id="section-filler-2" class="filler filler-bg center-item seperator">
+    <section id="section-filler-2" class="filler center-item">
+      <div class="filler-bg-img-2"></div>
       <div class="container">
-        <button class="filler-button">Adventure</button>
+        <button class="btn-secondary">Adventure</button>
       </div>
     </section>
     <!-- END SECTION FILLER 2 -->
     <!-- SECTION DESTINATIONS -->
-    <section id="section-destinations" class="destinations center-item seperator">
-      <div class="container">
-        <div class="twelve columns">
-          <h2>Planet ###</h2>
-          <div id="planet" class="planet-bg-img seperator center-item"></div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni distinctio ipsam tenetur mollitia. Molestias
-            assumenda ad pariatur dolore dolor.</p>
-          <button class="button-primary filler-button">View Planet</button>
+    <section id="section-destinations" class="destinations center-item">
+      <div class="container seperator">
+        <div class="row">
+          <div class="one-third column">
+            <h2>Planet ###</h2>
+            <div id="planet" class="planet-bg-img seperator center-item"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni distinctio ipsam tenetur mollitia. Molestias
+              assumenda ad pariatur dolore dolor.</p>
+            <button class="btn-main">View Planet</button>
+          </div>
+          <div class="one-third column">
+            <h2>Planet ###</h2>
+            <div id="planet" class="planet-bg-img seperator center-item"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni distinctio ipsam tenetur mollitia. Molestias
+              assumenda ad pariatur dolore dolor.</p>
+            <button class="btn-main">View Planet</button>
+          </div>
+          <div class="one-third column">
+            <h2>Planet ###</h2>
+            <div id="planet" class="planet-bg-img seperator center-item"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni distinctio ipsam tenetur mollitia. Molestias
+              assumenda ad pariatur dolore dolor.</p>
+            <button class="btn-main">View Planet</button>
+          </div>
         </div>
       </div>
     </section>
     <!-- END SECTION OUR DESTINATIONS -->
     <!-- SECTION FILLER 3 -->
-    <section id="section-filler-3" class="filler filler-bg center-item seperator">
+    <section id="section-filler-3" class="filler center-item">
+      <div class="filler-bg-img-3"></div>
       <div class="container">
-        <button class="filler-button">Travel</button>
+        <button class="btn-secondary">Travel</button>
       </div>
     </section>
     <!-- END SECTION FILLER 3 -->
     <!-- SECTION REVIEWS -->
-
+    <section id="section-reviews" class="reviews seperator center-item">
+      <div class="container">
+        <div class="row">
+          <div class="one-third column reviews">
+            <h2 class="reviews-rating">
+              John Smith
+            </h2>
+            <p class="reviews-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, itaque?</p>
+            <h2 class="reviews-rating">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </h2>
+          </div>
+          <div class="one-third column reviews">
+            <h2 class="reviews-rating">
+              Ned Stark
+            </h2>
+            <p class="reviews-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, itaque?</p>
+            <h2 class="reviews-rating">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star-half"></i>
+            </h2>
+          </div>
+          <div class="one-third column reviews">
+            <h2 class="reviews-rating">
+              Tom Cruise
+            </h2>
+            <p class="reviews-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, itaque?</p>
+            <h2 class="reviews-rating">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- END SECTION REVIEWS -->
     <!-- SECTION ABOUT (TEAM) -->
 

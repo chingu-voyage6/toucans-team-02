@@ -13,6 +13,7 @@ body {
   letter-spacing: 0.05em;
   color: #000;
   font-family: "Raleway", sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
 /* STYLING */
@@ -31,18 +32,45 @@ body {
 
 /* Utility Classes */
 .center-item {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 .seperator {
-  margin-bottom: 1.6em;
-  padding-bottom: 1.6em;
-  margin-top: 1.6em;
-  padding-top: 1.6em;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
+
+.btn-main {
+  border-radius: 100px;
+  background-color: #444;
+  color: #ddd;
+  font-size: .8em;
+}
+
+.btn-main:hover {
+  color: rgb(196, 181, 52);
+  border: 2px rgb(196, 181, 52) solid;
+}
+
+.btn-secondary {
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  white-space: nowrap;
+  margin: 0 auto;
+  font-size: 1.2em;
+  border-radius: 0%;
+  border: 2px #444 solid;
+}
+
+.btn-secondary:hover {
+  background: rgba(77, 76, 76, 0.2);
+  color: #fff;
+  border: 3px rgb(196, 181, 52) solid;
+}
+
 /* Navigation */
 .navigation ul {
   list-style: none;
@@ -56,6 +84,7 @@ body {
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
+  background-color: #222;
 }
 
 nav a {
@@ -64,12 +93,12 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #fff;
-  color: #000;
-  transition: 0.3s background-color;
+  color: rgb(196, 181, 52);
+  border-bottom: 1px rgb(196, 181, 52) solid;
+  transition: 0.5s;
 }
 
-.navigation a.active {
+.navigation .active {
   background-color: #fff;
   color: #444;
 }
@@ -88,15 +117,51 @@ nav a:hover {
     margin-right: -4px;
   }
 }
-/* Filler Section */
+/* Hero Section */
 
-.filler-bg {
+.hero {
   background-color: #ddd;
 }
-.filler-button {
-  font-size: 1.2em;
+
+.section-hero-bg-image {
+  position: absolute;
+  background: url("");
 }
 
+/* Welcome Section */
+
+/* Filler Section */
+.filler {
+  height: 20em;
+}
+.filler-bg-img {
+  position: absolute;
+  background: url("../assets/cosmos-earth-space-5439.jpg") no-repeat center
+    center;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 20em;
+  opacity: 0.6;
+}
+.filler-bg-img-2 {
+  position: absolute;
+  background: url("../assets/pexels-photo-355288.jpeg") no-repeat center center;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 20em;
+  opacity: 0.6;
+}
+.filler-bg-img-3 {
+  position: absolute;
+  background: url("../assets/pexels-photo-1040473.jpeg") no-repeat center center;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 20em;
+  opacity: 0.6;
+}
 /* Services Section */
 
 #section-services h5 {
@@ -113,4 +178,21 @@ nav a:hover {
   width: 18em;
   border: 2px #222 solid;
   border-radius: 50%;
+}
+
+/* Review Section */
+
+.reviews {
+  background-color: #444;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+.reviews-rating {
+  margin-bottom: .5rem;
+  color: rgb(196, 181, 52);
+}
+
+.reviews-comment {
+  opacity: .8;
+  font-weight: 300;
 }
