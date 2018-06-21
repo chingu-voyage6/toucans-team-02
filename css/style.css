@@ -46,7 +46,7 @@ body {
   border-radius: 100px;
   background-color: #444;
   color: #ddd;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .btn-main:hover {
@@ -55,20 +55,19 @@ body {
 }
 
 .btn-secondary {
-  display: inline-block;
   height: 100px;
-  line-height: 100px;
-  white-space: nowrap;
-  margin: 0 auto;
   font-size: 1.2em;
   border-radius: 0%;
-  border: 2px #444 solid;
+  border: 3px #222 solid;
+  color: #222;
+  background: rgba(77, 76, 76, 0.2);
+  margin: 5em;
 }
 
 .btn-secondary:hover {
-  background: rgba(77, 76, 76, 0.2);
+  border: 3px #222 solid;
   color: #fff;
-  border: 3px rgb(196, 181, 52) solid;
+  background: rgba(77, 76, 76, 0.2);
 }
 
 /* Navigation */
@@ -85,6 +84,7 @@ body {
   line-height: 40px;
   height: 40px;
   background-color: #222;
+  margin: 0;
 }
 
 nav a {
@@ -118,51 +118,33 @@ nav a:hover {
   }
 }
 /* Hero Section */
-
 .hero {
-  background-color: #ddd;
+  background: url("../assets/hero-bg-img.jpeg") no-repeat center;
+  background-size: cover;
+  color: #444;
+  height: 80vh;
 }
 
-.section-hero-bg-image {
-  position: absolute;
-  background: url("");
+.hero h1 {
+  font-weight: bold;
+  color: #222;
 }
 
 /* Welcome Section */
+.welcome {
+  background-color: #fff;
+}
 
 /* Filler Section */
 .filler {
-  height: 20em;
+  background: url("../assets/pexels-photo-1040473.jpeg") no-repeat fixed;
+  background-size: cover;
 }
-.filler-bg-img {
-  position: absolute;
-  background: url("../assets/cosmos-earth-space-5439.jpg") no-repeat center
-    center;
-  background-size: 100% 100%;
-  background-position: 50% 50%;
-  width: 100%;
-  height: 20em;
-  opacity: 0.6;
-}
-.filler-bg-img-2 {
-  position: absolute;
-  background: url("../assets/pexels-photo-355288.jpeg") no-repeat center center;
-  background-size: 100% 100%;
-  background-position: 50% 50%;
-  width: 100%;
-  height: 20em;
-  opacity: 0.6;
-}
-.filler-bg-img-3 {
-  position: absolute;
-  background: url("../assets/pexels-photo-1040473.jpeg") no-repeat center center;
-  background-size: 100% 100%;
-  background-position: 50% 50%;
-  width: 100%;
-  height: 20em;
-  opacity: 0.6;
-}
+
 /* Services Section */
+.services {
+  padding-top: 5em;
+}
 
 #section-services h5 {
   font-size: 1.2em;
@@ -171,7 +153,6 @@ nav a:hover {
 }
 
 /* Destination Section */
-
 .planet-bg-img {
   background-color: #ddd;
   height: 18em;
@@ -181,18 +162,17 @@ nav a:hover {
 }
 
 /* Review Section */
-
 .reviews {
   background-color: #444;
   color: #fff;
   padding-bottom: 5rem;
 }
 .reviews-rating {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: rgb(196, 181, 52);
 }
 
 .reviews-comment {
-  opacity: .8;
+  opacity: 0.8;
   font-weight: 300;
 }
