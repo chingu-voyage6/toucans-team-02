@@ -4,6 +4,8 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* GLOBAL */
@@ -15,20 +17,9 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: rgb(255, 255, 255);
 }
-
-/* STYLING */
-
-/* .section-hero-bg-image {
-  background: url("");
-  background-size: cover;
-  background-position: 50% 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0.9;
-} 
+a {
+  text-decoration: none;
+}
 
 /* Utility Classes */
 .center-item {
@@ -71,52 +62,81 @@ body {
 }
 
 /* Navigation */
-.navigation ul {
-  list-style: none;
-  background-color: #222;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-.navigation li {
+.navigation {
   font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  background-color: #222;
-  margin: 0;
+  background: #444;
+  padding-bottom: 1em;
 }
-
-nav a {
+.navigation a:hover {
+  color: rgb(196, 181, 52);
+  transition: 0.5s;
+}
+#main-nav {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+.nav-item, .logo {
   text-decoration: none;
   color: #fff;
 }
-
-nav a:hover {
-  color: rgb(196, 181, 52);
-  border-bottom: 1px rgb(196, 181, 52) solid;
-  transition: 0.5s;
+#main-nav li {
+  text-align: center;
+  margin: 1em auto;
+}
+.logo {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-top: 0.8em;
+  margin-left: 1.2em;
 }
 
-.navigation .active {
-  background-color: #fff;
-  color: #444;
+.navbar-toggle {
+  position: absolute;
+  top: 0.2em;
+  right: 1.1em;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1em;
 }
 
-@media screen and (min-width: 600px) {
-  nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
+/* For no mobile menu on desktop */
+@media screen and (min-width: 768px) {
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
   }
 
-  .navigation li {
-    display: inline-block;
-    margin-right: -4px;
+  #main-nav {
+    display: flex !important;
+    margin-right: 30px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-end;
   }
+
+  #main-nav li {
+    margin: 0;
+  }
+
+  .nav-item {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+  
 }
+
 /* Hero Section */
 .hero {
   background: url("../assets/hero-bg-img.jpeg") no-repeat center;
