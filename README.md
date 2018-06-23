@@ -8,34 +8,29 @@
 
 ### Weekly ToDo
 
-- [ ] Complete HTML Structure.
-- [ ] Collect assets for site.
-- [ ] Decide colour palette 
-- [ ] Merge progress to dev branch (create dev branch).
-
-#### MVP
-
-Fully functional landing page
-(Extra features added when this is complete)
+- [x] Select team lead (Jam)
+- [x] Choose project idea 
+- [x] Decide WorkFlow tools
+- [x] Decide MVP
 
 #### Features to add/Suggestions
 
+- Alien ChatBot
 - Booking Form 
 - Give people a fake ticket we design - extra if we have time
-- Client's we work with area with their logos (NASA, SpaceX, etc..)
-- Alien ChatBot
-- Autocomplete search bar
-- Could make up a currency: Credits
+- Client's we work with area? With their logos (NASA, SpaceX, etc..)
+- Autocomplete search bar?
+- Could make up a currency: Credits?
 - Intergalactic (fake)bank
 - More to be added. :alien:
 
 
 #### Goals in order of importance.
 
-1. Set up our development environment and get familiar with it :heavy_check_mark: 
+1. Set up our development environment and get familiar with it (Discord, Slack, Preferred IDE, Trello, GitHub) 
 
-2. Build HTML Structure (In Progress)
-3. Collect assets for site
+2. Build HTML Structure
+3. Collect assets for site (images etc.)
 4. Create CSS Styling for site
 5. Implement any JS features needed
 6. Build the booking form and implement

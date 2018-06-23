@@ -1,0 +1,237 @@
+/* RESET */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* GLOBAL */
+
+body {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.center-item {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.seperator {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.btn-main {
+  border-radius: 100px;
+  background-color: #444;
+  color: #ddd;
+  font-size: 0.8em;
+}
+
+.btn-main:hover {
+  color: rgb(196, 181, 52);
+  border: 2px rgb(196, 181, 52) solid;
+}
+
+.btn-secondary {
+  height: 100px;
+  font-size: 1.2em;
+  border-radius: 0%;
+  border: 3px #222 solid;
+  color: #222;
+  background: rgba(77, 76, 76, 0.2);
+  margin: 5em;
+}
+
+.btn-secondary:hover {
+  border: 3px #222 solid;
+  color: #fff;
+  background: rgba(77, 76, 76, 0.2);
+}
+
+/* Navigation */
+.navigation {
+  font-size: 1.2em;
+  background: #444;
+  padding-bottom: 1em;
+}
+.navigation a:hover {
+  color: rgb(196, 181, 52);
+  transition: 0.5s;
+}
+#main-nav {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+.nav-item, .logo {
+  text-decoration: none;
+  color: #fff;
+}
+#main-nav li {
+  text-align: center;
+  margin: 1em auto;
+}
+.logo {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-top: 0.8em;
+  margin-left: 1.2em;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 0.2em;
+  right: 1.1em;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1em;
+}
+
+/* For no mobile menu on desktop */
+@media screen and (min-width: 768px) {
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 50px;
+    align-items: center;
+    opacity: 0.8;
+  }
+
+  #main-nav {
+    display: flex !important;
+    margin-right: 30px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  #main-nav li {
+    margin: 0;
+  }
+
+  .nav-item {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+  
+} 
+header{
+  background: url("../assets/hero.gif") no-repeat center;
+  background-size: cover;
+}
+/* Hero Section */
+.hero {
+  
+  color: #444;
+  height: 80vh;
+}
+
+.hero h1 {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Welcome Section */
+.welcome {
+  background-color: #fff;
+}
+
+/* Filler Section */
+.filler {
+  background: url("../assets/pexels-photo-1040473.jpeg") no-repeat fixed;
+  background-size: cover;
+}
+
+/* Services Section */
+.services {
+  padding-top: 5em;
+}
+
+#section-services h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 1.3em;
+}
+
+/* Destination Section */
+.text{
+  font-size:16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding:20px;
+}
+img{
+  height:200px
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#section-destinations{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.active {
+  background-color: #717171;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  font-size: 40px;
+}
+.next {
+  right: 0;
+}
+#btn:hover{
+  background-color:#717171;
+}
+.planet{
+  text-align: center;
+}
+
+/* Review Section */
+.reviews {
+  background-color: #444;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+.reviews-rating {
+  margin-bottom: 0.5rem;
+  color: rgb(196, 181, 52);
+}
+
+.reviews-comment {
+  opacity: 0.8;
+  font-weight: 300;
+}
