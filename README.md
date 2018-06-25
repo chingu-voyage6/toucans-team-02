@@ -44,7 +44,7 @@ Fully functional landing page
 
 ##### Team Members
 
-Jam, Kaouter, Dozie
+| [@jmejme](https://github.com/jmejme) | [@kaoumrf](https://github.com/kaoumrf) | [@bobbylemm](https://github.com/bobbylemm) |
 
 
 
