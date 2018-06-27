@@ -7,68 +7,82 @@
   padding: 0;
   margin: 0;
 }
-
+/* VARIABLES */
+:root {
+  --header-font: "Titillium Web", sans-serif;
+  --main-font: "Montserrat", sans-serif;
+  --main-color: #1f2833;
+  --secondary-color: #66fcf1;
+  --link-color: #45a29e;
+  --main-font-color: #fff;
+  --shadow: 0px 15px 10px -15px #111;
+  --font-weight-subtext: 300;
+}
 /* GLOBAL */
-
 body {
   font-size: 16px;
   letter-spacing: 0.05em;
-  color: #000;
-  font-family: "Raleway", sans-serif;
-  background-color: rgb(255, 255, 255);
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  background-color: var(--main-color);
 }
 a {
   text-decoration: none;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+}
 /* Utility Classes */
 .center-item {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-
-.seperator {
-  padding-top: 10%;
-  padding-bottom: 10%;
+.heading-padding-top {
+  padding-top: 5em;
 }
-
+.subheading-padding-top {
+  padding-top: 1.5em;
+}
 .btn-main {
-  border-radius: 100px;
-  background-color: #444;
-  color: #ddd;
+  border-radius: 0px;
+  background-color: var(--link-color);
+  border: 2px var(--main-color) solid;
+  color: var(--main-color);
   font-size: 0.8em;
 }
-
 .btn-main:hover {
-  color: rgb(196, 181, 52);
-  border: 2px rgb(196, 181, 52) solid;
+  color: var(--main-color);
+  border: 2px var(--link-color) solid;
 }
 
 .btn-secondary {
   height: 100px;
   font-size: 1.2em;
   border-radius: 0%;
-  border: 3px #222 solid;
-  color: #222;
-  background: rgba(77, 76, 76, 0.2);
+  border: 2px var(--main-color) solid;
+  color: var(--main-color);
+  background: var(--link-color);
   margin: 5em;
 }
-
 .btn-secondary:hover {
-  border: 3px #222 solid;
-  color: #fff;
-  background: rgba(77, 76, 76, 0.2);
+  color: var(--main-color);
+  border: 3px var(--main-color) solid;
 }
-
 /* Navigation */
 .navigation {
   font-size: 1.2em;
-  background: #444;
+  background: transparent;
   padding-bottom: 1em;
+  box-shadow: var(--shadow);
 }
 .navigation a:hover {
-  color: rgb(196, 181, 52);
+  color: var(--link-color);
   transition: 0.5s;
 }
 #main-nav {
@@ -76,9 +90,10 @@ a {
   display: none;
   flex-direction: column;
 }
-.nav-item, .logo {
+.nav-item,
+.logo {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary-color);
 }
 #main-nav li {
   text-align: center;
@@ -86,23 +101,19 @@ a {
 }
 .logo {
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-top: 0.8em;
   margin-left: 1.2em;
 }
-
 .navbar-toggle {
   position: absolute;
   top: 0.2em;
   right: 1.1em;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
   font-size: 1.1em;
 }
-
 /* For no mobile menu on desktop */
-@media screen and (min-width: 768px) {
-
+/* @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -110,7 +121,6 @@ a {
     height: 70px;
     align-items: center;
   }
-
   #main-nav {
     display: flex !important;
     margin-right: 30px;
@@ -118,81 +128,52 @@ a {
     flex-direction: row;
     justify-content: flex-end;
   }
-
   #main-nav li {
     margin: 0;
   }
-
   .nav-item {
     margin-left: 40px;
   }
-
   .logo {
     margin-top: 0;
   }
-
   .navbar-toggle {
     display: none;
   }
-  
-}
-
+} */
 /* Hero Section */
 .hero {
-  background: url("../assets/hero-bg-img.jpeg") no-repeat center;
-  background-size: cover;
-  color: #444;
-  height: 80vh;
+  background: url("../assets/spacemanwave.svg") right no-repeat;
+  text-align: left;
+  color: var(--secondary-color);
+  height: 60vh;
 }
-
 .hero h1 {
   font-weight: bold;
-  color: #222;
 }
-
 /* Welcome Section */
-.welcome {
-  background-color: #fff;
-}
 
 /* Filler Section */
-.filler {
-  background: url("../assets/pexels-photo-1040473.jpeg") no-repeat fixed;
-  background-size: cover;
-}
-
+/* .filler {
+  background: var(--secondary-color);
+} */
 /* Services Section */
-.services {
-  padding-top: 5em;
-}
-
 #section-services h5 {
   font-size: 1.2em;
   font-weight: bold;
-  padding-top: 1.3em;
 }
-
 /* Destination Section */
 .planet-bg-img {
-  background-color: #ddd;
-  height: 18em;
-  width: 18em;
-  border: 2px #222 solid;
+  height: 15em;
+  width: 15em;
+  border: 1px var(--main-font-color) solid;
   border-radius: 50%;
 }
-
 /* Review Section */
 .reviews {
-  background-color: #444;
-  color: #fff;
-  padding-bottom: 5rem;
+  background-color: var(--main-color);
 }
-.reviews-rating {
-  margin-bottom: 0.5rem;
-  color: rgb(196, 181, 52);
-}
-
-.reviews-comment {
+.text-comment {
   opacity: 0.8;
-  font-weight: 300;
+  font-weight: var(--font-weight-subtext);
 }
