@@ -12,8 +12,9 @@
   --header-font: "Titillium Web", sans-serif;
   --main-font: "Montserrat", sans-serif;
   --main-color: #1f2833;
-  --secondary-color: #66fcf1;
-  --link-color: #45a29e;
+  --secondary-color: #d9b08c;
+  --link-color: #66fcf1;
+  --secondary-link-color: #ffcb9a;
   --main-font-color: #fff;
   --shadow: 0px 15px 10px -15px #111;
   --font-weight-subtext: 300;
@@ -24,7 +25,15 @@ body {
   letter-spacing: 0.05em;
   color: var(--main-font-color);
   font-family: var(--main-font);
-  background-color: var(--main-color);
+  /* background-image: linear-gradient(to top, #2c3531, #2c403b, #294c47, #225855, #116466); */
+  background-image: linear-gradient(
+    to top,
+    #846172,
+    #4c4458,
+    #846172,
+    #4c4458,
+    #1f2833
+  );
 }
 a {
   text-decoration: none;
@@ -43,11 +52,18 @@ h5 {
   margin-right: auto;
   text-align: center;
 }
-.heading-padding-top {
+.heading-padding {
   padding-top: 5em;
+  padding-bottom: 5em;
 }
 .subheading-padding-top {
   padding-top: 1.5em;
+}
+
+.break-section {
+  border-top: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  background-color: var(--main-color);
 }
 .btn-main {
   border-radius: 0px;
@@ -86,6 +102,7 @@ h5 {
   transition: 0.5s;
 }
 #main-nav {
+  font-family: var(--header-font);
   list-style-type: none;
   display: none;
   flex-direction: column;
@@ -93,7 +110,7 @@ h5 {
 .nav-item,
 .logo {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--main-font-color);
 }
 #main-nav li {
   text-align: center;
@@ -113,7 +130,7 @@ h5 {
   font-size: 1.1em;
 }
 /* For no mobile menu on desktop */
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -140,23 +157,23 @@ h5 {
   .navbar-toggle {
     display: none;
   }
-} */
+}
 /* Hero Section */
 .hero {
-  background: url("../assets/spacemanwave.svg") right no-repeat;
   text-align: left;
-  color: var(--secondary-color);
-  height: 60vh;
+  color: var(--main-font-color);
+  height: 60%;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    background: url("../assets/spacemanwave.svg") right no-repeat;
+  }
 }
 .hero h1 {
   font-weight: bold;
 }
 /* Welcome Section */
 
-/* Filler Section */
-/* .filler {
-  background: var(--secondary-color);
-} */
 /* Services Section */
 #section-services h5 {
   font-size: 1.2em;
