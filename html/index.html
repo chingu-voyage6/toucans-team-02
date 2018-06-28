@@ -20,12 +20,12 @@
   <header>
     <nav class="navigation">
       <span class="navbar-toggle">
-        <i class="fa fa-bars fa-3x"></i>
+        <i class="fa fa-bars"></i>
       </span>
-      <a href="#" class="logo" style="letter-spacing: 0.4; text-transform: uppercase;">SpaceLink</a>
-      <ul id="main-nav">
+      <!--<a href="#" class="logo">SpaceLink</a>-->
+      <ul id="main-nav" class="container" >
         <li>
-          <a href="#section-hero" class="nav-item">Home</a>
+          <a href="#section-hero" class="nav-item">SpaceLink</a>
         </li>
         <li>
           <a href="#section-welcome" class="nav-item">Welcome</a>
@@ -35,9 +35,6 @@
         </li>
         <li>
           <a href="#section-destinations" class="nav-item">Destinations</a>
-        </li>
-        <li>
-          <a href="#section-reviews" class="nav-item">Reviews</a>
         </li>
         <li>
           <a href="#" class="nav-item">About</a>
@@ -134,8 +131,8 @@
     <!-- SECTION DESTINATIONS -->
     <section id="section-destinations" class="destinations">
      <div class="container">
-      <h3 align="center">Destinations</h3>
-      <div  class="planet">
+      <h3 class="center-item">Destinations</h3>
+      <div class="planet">
         <div class="text">planet1</div>
         <img src="../assets/Mercury.gif">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni distinctio ipsam tenetur mollitia. Molestias
@@ -184,8 +181,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni distinctio ipsam tenetur mollitia. Molestias
             assumenda ad pariatur dolore dolor.</p>
       </div>
-      
-      <div class="dots" align="center">
+      <div class="center-item">
         <span class="dot"></span> 
         <span class="dot"></span> 
         <span class="dot"></span> 
@@ -202,65 +198,81 @@
     <!-- END SECTION OUR DESTINATIONS -->
     <!-- SECTION FILLER 3 -->
     <section id="section-filler-3" class="filler center-item">
-      <button class="btn-secondary">Travel</button>
+      <button class="btn-secondary">Book your ticket now</button>
     </section>
     <!-- END SECTION FILLER 3 -->
-    <!-- SECTION REVIEWS 
-    <section id="section-reviews" class="reviews seperator center-item">
-      <div class="container">
+    <!-- SECTION ABOUT (TEAM) -->
+    <!-- END SECTION ABOUT -->
+    <!-- SECTION OUR PARTNERS -->
+    <section id="section-partner">
+      <h3 class="center-item">Partners</h3>
+      <div class="Partners-logo">
         <div class="row">
-          <div class="one-third column reviews">
-            <h2 class="reviews-rating">
-              Will Smith
-            </h2>
-            <p class="reviews-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, itaque?</p>
-            <h2 class="reviews-rating">
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </h2>
+          <div class="five columns">
+            <a title="spacex" target="_blank" href="http://spacex.com/">
+                <img src="../assets/spacex.png" alt="Sponsor Logo">
+            </a>
           </div>
-          <div class="one-third column reviews">
-            <h2 class="reviews-rating">
-              Ned Stark
-            </h2>
-            <p class="reviews-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, itaque?</p>
-            <h2 class="reviews-rating">
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star-half"></i>
-            </h2>
+          <div class="four columns">
+            <a title="esa" target="_blank" href="http://esacompany.com/">
+                <img src="../assets/esa.png" alt="Sponsor Logo">
+            </a>
           </div>
-          <div class="one-third column reviews">
-            <h2 class="reviews-rating">
-              Tom Cruise
-            </h2>
-            <p class="reviews-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, itaque?</p>
-            <h2 class="reviews-rating">
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </h2>
+          <div class="three columns">
+            <a title="nasa" target="_blank" href="http://nasa.com/">
+                <img src="../assets/nasa.png" alt="Sponsor Logo">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="seven columns">
+            <a title="kepler" target="_blank" href="http://keplercommunications.com/">
+                <img src="../assets/kepler.png" alt="Sponsor Logo">
+            </a>
+          </div>
+          <div class="five columns">
+            <a title="startolaunch" target="_blank" href="http://startolaunch.com/">
+                <img src="../assets/startolaunch.png" alt="Sponsor Logo">
+            </a>
           </div>
         </div>
       </div>
-    </section>-->
-    <!-- END SECTION REVIEWS -->
-    <!-- SECTION ABOUT (TEAM) -->
-
-    <!-- END SECTION ABOUT -->
-    <!-- SECTION OUR PARTNERS -->
-
+    </section>
     <!-- END SECTION OUR PARTNERS -->
+    <hr>
     <!-- SECTION CONTACT -->
-
+    <section id="section-contact">
+      <div class="container">
+           <h3 class="center-item">Contact</h3>
+           <i>Contact us for more information</i>
+        <div class="row ">
+          <div class="seven columns" id= "contacts" >
+            <br>
+            <i class="fa fa-map-marker">&nbsp;</i>Earth, Milky Way<br>
+            <i class="fa fa-phone">&nbsp;</i>#000<br>
+            <i class="fa fa-envelope">&nbsp;</i>email@spacelink.mw<br>
+          </div>
+          <div class="five columns" >
+             <input type="text" placeholder="Your name"><br>
+              <input type="email" placeholder="@"><br>
+              <textarea placeholder="Your message"></textarea>
+          </div>
+          <div class="center-item"><input type="button" value="Submit"></div>
+        </div>
+      </div>
+    </section>
     <!-- END SECTION CONTACT -->
-
+    <hr>
     <!-- FOOTER -->
-
+    <footer>
+      <div class="container">
+        <span>Follow SpaceLink |</span>
+        <span html="#">Twitter</span>
+        <span html="#">Youtube</span>
+        <span html="#">Instagram</span>
+        <span html="#" id="copyright">&#9400; 2018 SpaceLink space travel corp.</span>
+      </div>
+    </footer>
     <!-- END FOOTER -->
 
   </main>
