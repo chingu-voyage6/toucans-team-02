@@ -1,0 +1,224 @@
+/* RESET */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* VARIABLES */
+:root {
+  --header-font: "Titillium Web", sans-serif;
+  --main-font: "Montserrat", sans-serif;
+  --main-color: #1f2833;
+  --secondary-color: #66fcf1;
+  --link-color: #dbdd62;
+  --secondary-link-color: #ffcb9a;
+  --main-font-color: #f8f8f8;
+  --shadow: 0px 15px 10px -15px #111;
+  --font-weight-subtext: 300;
+}
+/* GLOBAL */
+body {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  /* background-image: linear-gradient(
+    to top,
+    #846172,
+    #4c4458,
+    #846172,
+    #4c4458,
+    #1f2833
+  ); */
+  background: #2f2f2f;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+}
+section {
+  padding: 5rem 0 5rem 0;
+}
+i {
+  color: var(--link-color);
+}
+/* Utility Classes */
+.center-item {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.break-section {
+  border-top: 2px #444 solid;
+  border-bottom: 2px #444 solid;
+  background-color: #444;
+}
+.text-comment {
+  opacity: 0.8;
+  font-weight: var(--font-weight-subtext);
+}
+/* Button */
+.btn-main {
+  color: var(--main-color);
+  cursor: pointer;
+  background: rgb(81, 224, 141);
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 2em;
+  max-width: 300px;
+  padding: 0 1em 0 1em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-effect {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-effect:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+/* Navigation */
+.navigation {
+  font-size: 1.2em;
+  background: transparent;
+  padding-bottom: 1em;
+  box-shadow: var(--shadow);
+}
+.navigation a:hover {
+  color: var(--link-color);
+  transition: 0.5s;
+}
+#main-nav {
+  font-family: var(--header-font);
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+.nav-item,
+.logo {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+#main-nav li {
+  text-align: center;
+  margin: 1em auto;
+}
+.logo {
+  display: inline-block;
+  font-size: 1.3em;
+  margin-top: 0.8em;
+  margin-left: 1.2em;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 0.2em;
+  right: 1.1em;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+/* For no mobile menu on desktop */
+@media screen and (min-width: 1024px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  #main-nav {
+    display: flex !important;
+    margin-right: 30px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #main-nav li {
+    margin: 0;
+  }
+  .nav-item {
+    margin-left: 40px;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+}
+/* Hero Section */
+.hero {
+  text-align: left;
+  padding-top: 5rem;
+  color: var(--main-font-color);
+}
+.rocket-image {
+  display: none;
+}
+@media (min-width: 640px) {
+  .rocket-image {
+    display: block;
+    margin: 0;
+    height: 40rem;
+  }
+}
+.hero h1 {
+  font-weight: bold;
+}
+.hero p {
+  font-size: 2rem;
+}
+/* Welcome Section */
+.welcome p {
+  font-size: 1.8rem;
+}
+/* Services Section */
+
+.services h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.services p {
+  opacity: 0.8;
+}
+.services i {
+  padding: 3rem 0 3rem 0;
+}
+/* Destination Section */
+.planet img {
+  height: 200px;
+}
+@media (min-width: 1000px) {
+  .planet img {
+    height: 300px;
+  }
+}
+/* Sponsor Section */
+.sponsor {
+  background-color: var(--main-color);
+}
+.sponsor-column-2 {
+  padding: 3rem 0 3rem 0;
+}

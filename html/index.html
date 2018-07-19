@@ -1,23 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
- 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
-  
+
   <title>SpaceLink</title>
 </head>
+
 <body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navigation">
+      <span class="navbar-toggle">
+        <i class="fa fa-bars fa-3x"></i>
+      </span>
+      <a href="#" class="logo">SpaceLink</a>
+      <ul id="main-nav">
+        <li>
+          <a href="#section-hero" class="nav-item">HOME</a>
+        </li>
+        <li>
+          <a href="#section-services" class="nav-item">SERVICES</a>
+        </li>
+        <li>
+          <a href="#section-destinations" class="nav-item">DESTINATIONS</a>
+        </li>
+        <li>
+          <a href="#section-reviews" class="nav-item">REVIEWS</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">ABOUT</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- END NAVBAR -->
+  <!-- SECTION HERO -->
+  <main>
+    <section id="section-hero" class="hero center-item">
+      <div class="container">
+        <div class="one-half column">
+          <h1>Looking for adventure?</h1>
+          <p class="text-comment">Book with SpaceLink for your next galactic travel, you won't look back.</p>
+        </div>
+        <div class="one-half column">
+          <img class="rocket-image u-pull-right" src="../assets/rocket.png" alt="rocket">
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION HERO -->
+    <!-- SECTION WELCOME -->
+    <section id="section-welcome" class="welcome break-section center-item">
+      <div class="container">
+        <div class="">
+          <h2>Welcome to SpaceLink</h2>
+          <p class="text-comment">Here at SpaceLink we offer travel to each of the planets in our local solar system, with luxury accomodation for
+            your journey to the new worlds. </p>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION WELCOME -->
+    <!-- SECTION WHAT WE OFFER -->
+    <section id="section-services" class="services center-item">
+      <div class="container">
+        <div class="twelve columns">
+          <h2>What we offer</h2>
+        </div>
+        <div class="row">
+          <div class="one-third column">
+            <i class="far fa-comments fa-4x"></i>
+            <h5>Vince AI</h5>
+            <p>With every SpaceLink journey you recieve your very own personal AI assitant, Vince, Ask him anything!
+            </p>
+          </div>
+          <div class="one-third column">
+            <i class="fas fa-globe fa-4x"></i>
+            <h5>More Planets</h5>
+            <p>We take you to more destinations than any other intergalactic travel company! </p>
+          </div>
+          <div class="one-third column">
+            <i class="fas fa-space-shuttle fa-4x"></i>
+            <h5>High-Tech Ships</h5>
+            <p>Our ships have been fitted with state of the art tech, nanobots, autopilot, holodecks and more!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-third column">
+            <i class="fas fa-utensils fa-4x"></i>
+            <h5>Food from home</h5>
+            <p>All our ships are stocked with your favorite foods from back home, no matter how long you're travelling for.</p>
+          </div>
+          <div class="one-third column">
+            <i class="fas fa-briefcase-medical fa-4x"></i>
+            <h5>Medical Bay</h5>
+            <p>Every ship has a medical facility onboard with a 3D printer and a medical android on standby for any issues.</p>
+          </div>
+          <div class="one-third column">
+            <i class="fab fa-accessible-icon fa-4x"></i>
+            <h5>Disabled Access</h5>
+            <p>All our ships are fitted with diability functionality, so everyone can travel with SpaceLink!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION WHAT WE OFFER -->
+    <!-- SECTION BREAK -->
+    <section id="section-break" class="break-section center-item">
+      <div class="container">
+        <h2>Where can you go?</h2>
+      </div>
+    </section>
+    <!-- END SECTION BREAK -->
+    <!-- SECTION DESTINATIONS -->
+    <!-- <section id="section-destinations" class="destinations center-item">
+      <div class="heading-padding">
+        <div id="planet" class="planet">
+          <a class="prev" id="btn" onclick="plusSlides(-1)">
+            <i class="fas fa-caret-left fa-3x"></i>
+          </a>
+          <img class="earth-img" src="../assets/earth.png">
+          <a class="next" id="btn" onclick="plusSlides(1)">
+            <i class="fas fa-caret-right fa-3x"></i>
+          </a>
+        </div>
+        <p class="subheading-padding-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni distinctio ipsam tenetur mollitia.</p>
+        <button class="btn-main">View Planet</button>
+      </div>
+    </section> -->
+    <section id="section-destinations" class="destinations center-item">
+      <div class="container">
+        <div class="row">
+          <div class="planet one-third column">
+            <img src="../assets/mercury2.png">
+            <p>Go diving in the molten core and climbing in the supermassive craters</p>
+            <button class="btn-main btn-effect">$500</button>
+          </div>
+          <div class="planet one-third column">
+            <img src="../assets/earth2.png">
+            <p>The oasis of space. Where the air is literally free and breathing is easy</p>
+            <button class="btn-main btn-effect">$500</button>
+          </div>
+          <div class="planet one-third column">
+            <img src="../assets/venus2.png">
+            <p>Keep your heat suits on for the hottest planet in the solar system, 462 degrees!</p>
+            <button class="btn-main btn-effect">$500</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="planet one-third column">
+            <img src="../assets/mars2.png">
+            <p>Visit Olympus Mons the tallest mountain volcano in the solar system</p>
+            <button class="btn-main btn-effect">$500</button>
+          </div>
+          <div class="planet one-third column">
+            <img src="../assets/jupiter2.png">
+            <p>Experience the mighty radioactive auroras and it's nine hour days</p>
+            <button class="btn-main btn-effect">$500</button>
+          </div>
+          <div class="planet one-third column">
+            <img src="../assets/uranus2.png">
+            <p>Visit the ice giant and go hover boarding down the gigantic glaciers</p>
+            <button class="btn-main btn-effect">$500</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="planet one-half column">
+            <img src="../assets/pluto2.png">
+            <p>Head to the famous dwarf planet and explore the ice caves!</p>
+            <button class="btn-main btn-effect">$500</button>
+          </div>
+          <div class="planet one-half column">
+            <img src="../assets/neptune2.png">
+            <p>Whirl through the atmospheric mega storms and visit the Great Dark Spot..</p>
+            <button class="btn-main btn-effect">$500</button>
+          </div>
+        </div>
+        <!-- <a class="prev" id="btn" onclick="plusSlides(-1)">
+          <i class="fas fa-caret-left fa-3x"></i>
+        </a>
+        <a class="next" id="btn" onclick="plusSlides(1)">
+          <i class="fas fa-caret-right fa-3x"></i>
+        </a> -->
+      </div>
+    </section>
+    <!-- END SECTION OUR DESTINATIONS -->
+    <!-- SECTION REVIEWS -->
+    <section id="section-sponsor" class="sponsor break-section center-item">
+      <div class="container">
+        <h2>Our Sponsors</h2>
+        <div class="row">
+          <div class="one-half column">
+            <div class="sponsor-column-1">
+              <img src="../assets/nasa-logo.png" alt="nasa">
+            </div>
+            <div class="sponsor-column-1">
+              <img src="../assets/virginGalactic-logo.png" alt="virgin galactic">
+            </div>
+          </div>
+          <div class="one-half column">
+            <div class="sponsor-column-2">
+              <img src="../assets/spaceX-logo.png" alt="spaceX">
+            </div>
+            <div class="sponsor-column-2">
+              <img src="../assets/boeing-logo.png" alt="boeing">
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- END SECTION REVIEWS -->
+
+    <!-- SECTION ABOUT (TEAM) -->
+
+    <!-- END SECTION ABOUT -->
+    <!-- SECTION OUR PARTNERS -->
+
+    <!-- END SECTION OUR PARTNERS -->
+    <!-- SECTION CONTACT -->
+
+    <!-- END SECTION CONTACT -->
+
+    <!-- FOOTER -->
+
+    <!-- END FOOTER -->
+
+  </main>
 
 
-
-
-
-  
-<script src="../js/app.js"></script>
+  <script src="../js/app.js"></script>
 </body>
+
 </html>
