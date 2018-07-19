@@ -5,7 +5,6 @@
 
 :rocket: - A hoax travel website for interplanetary travel, buy tickets, chat to alien sales department and explore the galaxy!
 
-
 ### Weekly ToDo
 
 - [x] Complete HTML Structure.
@@ -32,7 +31,6 @@ Fully functional landing page
 #### Goals in order of importance.
 
 1. Set up our development environment and get familiar with it :heavy_check_mark: 
-
 2. Build HTML Structure :heavy_check_mark:
 3. Collect assets for site :heavy_check_mark:
 4. Create CSS Styling for site :heavy_check_mark:
