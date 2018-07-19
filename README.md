@@ -8,30 +8,34 @@
 
 ### Weekly ToDo
 
-- [x] Select team lead (Jam)
-- [x] Choose project idea 
-- [x] Decide WorkFlow tools
-- [x] Decide MVP
+- [x] Complete HTML Structure.
+- [x] Collect assets for site.
+- [x] Decide colour palette 
+- [x] CSS Styling
+
+#### MVP
+
+Fully functional landing page
+(Extra features added when this is complete)
 
 #### Features to add/Suggestions
 
-- Alien ChatBot
 - Booking Form 
 - Give people a fake ticket we design - extra if we have time
-- Client's we work with area? With their logos (NASA, SpaceX, etc..)
-- Autocomplete search bar?
-- Could make up a currency: Credits?
+- Client's we work with area with their logos (NASA, SpaceX, etc..) :heavy_check_mark:
+- Autocomplete search bar
+- Could make up a currency: Credits
 - Intergalactic (fake)bank
 - More to be added. :alien:
 
 
 #### Goals in order of importance.
 
-1. Set up our development environment and get familiar with it (Discord, Slack, Preferred IDE, Trello, GitHub) 
+1. Set up our development environment and get familiar with it :heavy_check_mark: 
 
-2. Build HTML Structure
-3. Collect assets for site (images etc.)
-4. Create CSS Styling for site
+2. Build HTML Structure :heavy_check_mark:
+3. Collect assets for site :heavy_check_mark:
+4. Create CSS Styling for site :heavy_check_mark:
 5. Implement any JS features needed
 6. Build the booking form and implement
 7. Build the ChatBot and implement
@@ -39,11 +43,4 @@
 
 ##### Team Members
 
-Jam, Kaouter, Dozie
-
-
-
-
-
-
-
+| [@jmejme](https://github.com/jmejme) | [@kaoumrf](https://github.com/kaoumrf) | [@bobbylemm](https://github.com/bobbylemm) |
