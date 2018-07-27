@@ -9,8 +9,8 @@
 }
 /* VARIABLES */
 :root {
-  --header-font: "Titillium Web", sans-serif;
-  --main-font: "Montserrat", sans-serif;
+  --header-font: 'Titillium Web', sans-serif;
+  --main-font: 'Montserrat', sans-serif;
   --main-color: #1f2833;
   --secondary-color: #66fcf1;
   --link-color: #dbdd62;
@@ -61,7 +61,7 @@ i {
 .break-section {
   border-top: 2px #444 solid;
   border-bottom: 2px #444 solid;
-  background-color: #444;
+  background-color: rgb(29, 31, 31);
 }
 .text-comment {
   opacity: 0.8;
@@ -71,12 +71,14 @@ i {
 .btn-main {
   color: var(--main-color);
   cursor: pointer;
-  background: rgb(81, 224, 141);
+  background: rgb(124, 221, 165);
   font-size: 1em;
   font-weight: bold;
   margin: 0 0 2em;
-  max-width: 300px;
-  padding: 0 1em 0 1em;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 25px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -134,13 +136,23 @@ i {
 }
 .navbar-toggle {
   position: absolute;
-  top: 0.2em;
-  right: 1.1em;
+  right: 0;
+  padding: 0.7em;
   cursor: pointer;
   font-size: 1.1em;
 }
+.fa-shopping-cart {
+  font-size: 1.6em;
+  color: rgb(231, 231, 231);
+  opacity: 0.8;
+}
+.fa-shopping-cart:hover {
+  font-size: 1.6em;
+  transform: scale(1.1);
+  opacity: 1;
+}
 /* For no mobile menu on desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 950px) {
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -210,15 +222,41 @@ i {
 .planet img {
   height: 200px;
 }
+.fa-cart-plus {
+  display: block;
+  font-size: 1.6em;
+  color: #353232;
+}
 @media (min-width: 1000px) {
   .planet img {
     height: 300px;
   }
 }
 /* Sponsor Section */
-.sponsor {
-  background-color: var(--main-color);
-}
 .sponsor-column-2 {
-  padding: 3rem 0 3rem 0;
+  padding: 4rem 0 4rem 0;
+}
+.sponsor-column-1 {
+  padding: 2rem 0 2rem 0;
+}
+/* Contact Section */
+#section-contact .button-primary {
+  color: #222;
+  font-size: 0.9em;
+  border: none;
+  width: 100%;
+}
+#section-contact p {
+  margin: 0.5em;
+}
+#section-contact .contact-address {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+/* Footer */
+.footer-section {
+  border-top: 2px #444 solid;
+  background-color: rgb(29, 31, 31);
+  padding: 3em;
+  font-size: 1.2em;
 }
