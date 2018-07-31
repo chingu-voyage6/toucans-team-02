@@ -39,17 +39,17 @@
         <li>
           <a href="#section-contact" class="nav-item">CONTACT</a>
         </li>
-        <li>
-          <a href="#" class="nav-item">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-        </li>
       </ul>
     </nav>
   </header>
   <!-- END NAVBAR -->
   <!-- SECTION HERO -->
   <main>
+    <a href="cart.html" class="nav-item">
+      <span class="shopping_cart">
+        <i class="fas fa-shopping-cart"></i>
+      </span>
+    </a>
     <section id="section-hero" class="hero center-item">
       <div class="container">
         <div class="one-half column">
@@ -65,11 +65,11 @@
     <!-- SECTION WELCOME -->
     <section id="section-welcome" class="welcome break-section center-item">
       <div class="container">
-        <div class="">
+        <divs>
           <h2>Welcome to SpaceLink</h2>
           <p class="text-comment">Here at SpaceLink we offer travel to each of the planets in our local solar system, with luxury accomodation for
             your journey to the new worlds. </p>
-        </div>
+        </divs>
       </div>
     </section>
     <!-- END SECTION WELCOME -->
@@ -121,31 +121,33 @@
     <section id="section-break" class="break-section center-item">
       <div class="container">
         <h2>Where can you go?</h2>
+        <p>Choose your destinations below</p>
       </div>
     </section>
     <!-- END SECTION BREAK -->
     <!-- SECTION DESTINATIONS -->
     <section id="section-destinations" class="destinations center-item">
+      <span class="insert"></span>
       <div class="container">
         <div class="row">
           <div class="planet one-third column">
             <img src="assets/mercury2.png">
             <p>Go diving in the molten core and climbing in the supermassive craters</p>
-            <button class="btn-main btn-effect">
+            <button class="btn-main btn-effect" data-name="Mercury - $500">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
           <div class="planet one-third column">
             <img src="assets/earth2.png">
             <p>The oasis of space. Where the air is literally free and breathing is easy</p>
-            <button class="btn-main btn-effect">
+            <button class="btn-main btn-effect" data-name="Earth - $250">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
           <div class="planet one-third column">
             <img src="assets/venus2.png">
             <p>Keep your heat suits on for the hottest planet in the solar system, 462 degrees!</p>
-            <button class="btn-main btn-effect">
+            <button class="btn-main btn-effect" data-name="Venus - $600">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
@@ -154,21 +156,21 @@
           <div class="planet one-third column">
             <img src="assets/mars2.png">
             <p>Visit Olympus Mons the tallest mountain volcano in the solar system</p>
-            <button class="btn-main btn-effect">
+            <button class="btn-main btn-effect" data-name="Mars - $750">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
           <div class="planet one-third column">
             <img src="assets/jupiter2.png">
             <p>Experience the mighty radioactive auroras and it's nine hour days</p>
-            <button class="btn-main btn-effect">
+            <button class="btn-main btn-effect" data-name="Jupiter - $580">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
           <div class="planet one-third column">
             <img src="assets/uranus2.png">
             <p>Visit the ice giant and go hover boarding down the gigantic glaciers</p>
-            <button class="btn-main btn-effect">
+            <button class="btn-main btn-effect" data-name="Uranus - $860">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
@@ -177,14 +179,14 @@
           <div class="planet one-half column">
             <img src="assets/pluto2.png">
             <p>Head to the famous dwarf planet and explore the ice caves!</p>
-            <button class="btn-main btn-effect">
+            <button class="btn-main btn-effect" data-name="Pluto - $299">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
           <div class="planet one-half column">
             <img src="assets/neptune2.png">
             <p>Whirl through the atmospheric mega storms and visit the Great Dark Spot..</p>
-            <button class="btn-main btn-effect">
+            <button class="btn-main btn-effect" data-name="Neptune - $350">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
@@ -252,9 +254,7 @@
       </div>
     </footer>
     <!-- END FOOTER -->
-
   </main>
-
   <script src="js/app.js"></script>
 </body>
 
