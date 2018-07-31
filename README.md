@@ -7,9 +7,9 @@
 ### ToDo
 
 - [x] MVP.
-- [ ] Shopping cart.
+- [x] Shopping cart.
 - [ ] Improve mobile menu.
-- [ ] Added to cart popup.
+- [x] Added to cart popup.
 
 #### MVP
 
